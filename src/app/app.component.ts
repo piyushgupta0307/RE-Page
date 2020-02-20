@@ -3,9 +3,8 @@ import { HttpClient } from '@angular/common/http';
 
 @Component({
   selector: 'app-root',
-  // templateUrl: './app.component.html',
-  // styleUrls: ['./app.component.css']
-  template: `<div id='treeparent'><ejs-treeview id='treeelement' [fields]='field' [allowEditing]='allowEditing' (nodeEditing)='editing($event)'></ejs-treeview></div>`
+  templateUrl: './app.component.html',
+  styleUrls: ['./app.component.css']
 })
 export class AppComponent {
   
@@ -17,24 +16,13 @@ export class AppComponent {
 
   ngOnInit() {
 
-    this.http.get(this.assetsPath + "data/data.json").subscribe((data1) => {
-      this.data = JSON.stringify(data1);
-      console.log("this is my dta  "+this.data);
+    this.http.get(this.assetsPath + "data/data.json").subscribe((data) => {
+      // this.data = JSON.stringify(data);
+      this.data = data;
+      console.log("this is my data  "+this.data);
     }, (error) => {
       console.log(error);
     });
 
   }
-
-      // maps the appropriate column to fields property
-      public field: Object = { dataSource: this.data, id: 'id', text: 'name', child: 'subChild' };
-      // enable the editing options to the TreeView
-      public allowEditing: boolean = true;
-      //Bind the nodeChecked event
-      // public editing(args: NodeCheckEventArgs) {
-      //         //check whether node is root node or not
-      //         if (args.node.parentNode.parentNode.nodeName !== "LI") {
-      //             args.cancel = true;
-      //         }
-      // };
 }

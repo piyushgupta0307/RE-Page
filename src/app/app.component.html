@@ -1,4 +1,13 @@
-<!-- {{title}}
+<ng-container *ngFor="let d of data">
+    <div class="col1" (click)="changeFrame(i,p,downloadPresenation,downloadhandouts)">
+        <img [src]="assetsPath+d.path" [alt]="d.path"  />
+        <p [innerText]="d.name" class="imageTitle"></p>
+      
+      </div>
+  </ng-container>
 
-<div id='treeparent'>
-  <ejs-treeview id='treeelement' [fields]='field' [allowEditing]='allowEditing' (nodeEditing)='editing($event)'></ejs-treeview></div> -->
+  <ul>
+    <li *ngFor="let d of data">
+    {{d.name.hrefsrc}}
+    </li>
+  </ul>
