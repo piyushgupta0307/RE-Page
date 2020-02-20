@@ -11,6 +11,7 @@ export class AppComponent {
   title = 'releasePage';
   private assetsPath: string = "../../assets/";
   public data: any;
+  closePreTab: boolean = true;
 
   constructor(private http: HttpClient){}
 
