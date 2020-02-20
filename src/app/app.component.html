@@ -1,13 +1,26 @@
+<div class="container-fluid text-center">
 <ng-container *ngFor="let d of data">
-    <div class="col1" (click)="changeFrame(i,p,downloadPresenation,downloadhandouts)">
+    <div class= "col1" (click)="changeFrame(i,p,downloadPresenation,downloadhandouts)">
         <img [src]="assetsPath+d.path" [alt]="d.path"  />
-        <p [innerText]="d.name" class="imageTitle"></p>
+        <p class="text-success"[innerText]="d.name" class="imageTitle"></p>
       
       </div>
   </ng-container>
+</div>
+<!-- <ul *ngIf= "!u.hide" class="list-group">
+<li class="list-group-item">Age: {{u.age}}</li>
+<li class="list-group-item">Address: {{u.address.street}} {{u.address.city}}, {{u.address.state}}</li>
+<li class="list-group-item">Balance: {{u.balance | currency:"GBP":"code"}} untill {{2|percent}}</li>
+<li class="list-group-item">Registered: {{u.registered | date}}</li>
+<li class="list-group-item">{{4 | number:'1.3'}}</li>
+</ul> -->
 
-  <ul>
-    <li *ngFor="let d of data">
-    {{d.name.hrefsrc}}
-    </li>
-  </ul>
+<!-- <ul class="list-unstyled">
+<li class="list-group-item" *ngFor="let d of data">Age: {{d.subChild.hreftitle}}</li>
+</ul> -->
+
+<div>
+<ul>
+<li *ngFor="let d of data"><a href="{{d.subChild.hreftitle}}" target="_blank">{{d.name}}</a></li>
+</ul>
+</div>
