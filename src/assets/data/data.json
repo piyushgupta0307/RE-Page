@@ -1,107 +1,80 @@
-[{
-		"name": "Deployments",
-		"path": "images/deployment.png",
-		"subChild": [{
-				"hreftitle": "ENT",
-				"hrefsrc": "http://support.hrw.com"
-			},
-			{
-				"hreftitle": "Content",
-				"hrefsrc": "Public"
-			},
-			{
-				"hreftitle": "Platform",
-				"hrefsrc": "Admin"
-			},
-			{
-				"hreftitle": "Other",
-				"hrefsrc": "Admin"
-			}
-		]
-	},
-	{
-		"name": "Services",
-		"path": "images/services.png",
-		"subChild": [{
-				"hreftitle": "ENT",
-				"hrefsrc": "http://support.hrw.com"
-			},
-			{
-				"hreftitle": "01-02-02",
-				"hrefsrc": "Public"
-			},
-			{
-				"hreftitle": "01-02-03",
-				"hrefsrc": "Admin"
-			}
-		]
-	},
-	{
-		"name": "Services",
-		"path": "images/services.png",
-		"subChild": [{
-				"hreftitle": "ENT",
-				"hrefsrc": "http://support.hrw.com"
-			},
-			{
-				"hreftitle": "01-02-02",
-				"hrefsrc": "Public"
-			},
-			{
-				"hreftitle": "01-02-03",
-				"hrefsrc": "Admin"
-			}
-		]
-	},
-	{
-		"name": "Services",
-		"path": "images/services.png",
-		"subChild": [{
-				"hreftitle": "ENT",
-				"hrefsrc": "http://support.hrw.com"
-			},
-			{
-				"hreftitle": "01-02-02",
-				"hrefsrc": "Public"
-			},
-			{
-				"hreftitle": "01-02-03",
-				"hrefsrc": "Admin"
-			}
-		]
-	},
-	{
-		"name": "Services",
-		"path": "images/services.png",
-		"subChild": [{
-				"hreftitle": "ENT",
-				"hrefsrc": "http://support.hrw.com"
-			},
-			{
-				"hreftitle": "01-02-02",
-				"hrefsrc": "Public"
-			},
-			{
-				"hreftitle": "01-02-03",
-				"hrefsrc": "Admin"
-			}
-		]
-	},
-	{
-		"name": "Services",
-		"path": "images/services.png",
-		"subChild": [{
-				"hreftitle": "ENT",
-				"hrefsrc": "http://support.hrw.com"
-			},
-			{
-				"hreftitle": "01-02-02",
-				"hrefsrc": "Public"
-			},
-			{
-				"hreftitle": "01-02-03",
-				"hrefsrc": "Admin"
-			}
-		]
-	}
-]
+{
+	"Deployments": [{
+			"title": "ENT",
+			"src": "http://support.hrw.com"
+		},
+		{
+			"title": "Content",
+			"src": "Public"
+		},
+		{
+			"title": "Platform",
+			"src": "Admin"
+		},
+		{
+			"title": "Others",
+			"src": "Admin"
+		}
+	],
+	"Services": [{
+			"title": "ENT",
+			"src": "http://support.hrw.com"
+		},
+		{
+			"title": "01-02-02",
+			"src": "Public"
+		},
+		{
+			"title": "01-02-03",
+			"src": "Admin"
+		}
+	],
+	"Tools": [{
+			"title": "ENT",
+			"src": "http://support.hrw.com"
+		},
+		{
+			"title": "01-02-02",
+			"src": "Public"
+		}
+	],
+	"Instructions": [{
+			"title": "ENT",
+			"src": "http://support.hrw.com"
+		}
+	],
+	"Communication": [{
+			"title": "ENT",
+			"src": "http://support.hrw.com"
+		},
+		{
+			"title": "01-02-02",
+			"src": "Public"
+		},
+		{
+			"title": "01-02-03",
+			"src": "Admin"
+		}
+	],
+	"Metrics": [{
+			"title": "ENT",
+			"src": "http://support.hrw.com"
+		},
+		{
+			"title": "01-02-02",
+			"src": "Public"
+		},
+		{
+			"title": "01-02-03",
+			"src": "Admin"
+		},
+		{
+			"title": "01-02-03",
+			"src": "Admin"
+		},
+		{
+			"title": "01-02-03",
+			"src": "Admin"
+		}
+	]
+}
