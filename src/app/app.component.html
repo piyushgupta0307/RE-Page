@@ -1,22 +1,16 @@
 <div id="container">
    <div class="page-header">
-      <h2>Example Page Header</h2>
    </div>
    <div class="my-auto text-center">
       <div class="row">
-         <ng-container *ngFor="let d of data">
-            <div class= "col1 col-4" href="#showChild" (click)="closePreTab=!closePreTab" data-toggle="collapse">
-               <img [src]="assetsPath+d.path" [alt]="d.path"  />
-               <p [innerText]="d.name" class="text-success imageTitle"></p>
+         <ng-container *ngFor="let d of arr; index as i" >
+            <div class= "col1">
+               <!-- <img [src]="assetsPath+d.path" [alt]="d.path"/> -->
+               <a routerLink="/route" [queryParams]="{ind:i}"><p class="ptext">{{d}}</p></a>
             </div>
          </ng-container>
-      </div>
-   </div>
-   <br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
-   <div id="showChild">
-      <ul class="jumbotron">
-	  <h2 class="card-header">Title</h2>
-         <li class="list-unstyled list-inline card card-body mb-8" *ngFor="let d of data"><a href="{{d.subChild.hreftitle}}" target="_blank">{{d.name}}</a></li>
-      </ul>
+      </div> 
    </div>
 </div>
+
+<router-outlet></router-outlet>

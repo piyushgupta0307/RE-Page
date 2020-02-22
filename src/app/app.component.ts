@@ -1,5 +1,7 @@
 import { Component, OnInit, ViewChild, ElementRef, Renderer2 } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
+import { filter } from 'rxjs/operators';
+
 
 @Component({
   selector: 'app-root',
@@ -13,19 +15,16 @@ export class AppComponent {
   public data: any;
   closePreTab: boolean = true;
   public arr: any;
+  public arr2: any;
   constructor(private http: HttpClient){}
 
   ngOnInit() {
 
     this.http.get(this.assetsPath + "data/data.json").subscribe((data) => {
-     //this.data = JSON.stringify(data);
     this.data = data;
-    this.arr=Object.keys(data);
-    console.log(Object.values(this.arr[1]));
-
-     // console.log("this is my data  "+this.data);
-      //debugger;
-    }, (error) => {
+	localStorage.setItem("jsonData", JSON.stringify(this.data));
+	this.arr=Object.keys(this.data);
+	}, (error) => {
       console.log(error);
     });
 
