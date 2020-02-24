@@ -1,6 +1,10 @@
-
+<!-- 
      <ng-container *ngFor="let d of arr3 index as i">
 	 <div class="col1">
 	  <a href="{{d.src}}" target="_blank"><p class="ptext">{{d.title}}</p></a>
 	    </div>
-	  </ng-container>
+	  </ng-container> -->
+
+				<ul class="jumbo">
+					 <li class="list-unstyled list-inline card card-body mb-8" *ngFor="let d of arr3 index as i"><a href="{{d.src}}" target="_blank">{{d.title}}</a></li>
+				</ul>

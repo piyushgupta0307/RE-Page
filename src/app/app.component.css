@@ -7,7 +7,8 @@
 #container
 {
     font-family:"Verdana";
-
+    margin: 0 auto;
+    width: 50%; 
 }
 .col1
 {
@@ -44,4 +45,11 @@ font-size:12px;
     box-sizing: border-box;
     padding: 0px;
     margin: 0px;
+}
+
+#header
+{
+    padding: 12px 15px;
+    color:rgba(12, 0, 0, 0.65);
+    text-align: center;
 }
