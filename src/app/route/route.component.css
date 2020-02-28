@@ -12,12 +12,14 @@
 
 a {
 text-decoration:none;
-color:Tomato;
+color:white;
 }
 
 .ptext{
 margin-top:35px;
 font-size:12px;
+text-align:center;
+
 }
 
 .jumbo {
