@@ -25,11 +25,13 @@
 a {
 text-decoration:none;
 color:white;
+width: 213px;
 }
 
 .ptext{
 margin-top:35px;
 font-size:12px;
+font-weight: 400;
 }
 
 .row {
@@ -38,6 +40,8 @@ font-size:12px;
     box-sizing: border-box;
     padding: 0px;
     margin: 0px;
+    background: #eae7e7;
+    border-radius: 20px;
 }
 .col {
     float: right;

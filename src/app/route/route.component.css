@@ -30,3 +30,11 @@ text-align:center;
     text-align: center;
     clear:both;
 }
+#container
+{
+    font-family:"Verdana";
+    margin: 0 auto;
+    width: 50%; 
+    background: #eae7e7;
+    border-radius: 20px;
+}

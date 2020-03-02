@@ -13,6 +13,8 @@ ind: string;
 indNum: number;
 arr3: any;
 private jdata: any;
+userType: any;
+c: any;
   constructor(private route:ActivatedRoute) { }
 
   ngOnInit() {
@@ -32,5 +34,6 @@ private jdata: any;
 	  }
 
     });
+
 }
 }
